@@ -2,9 +2,8 @@ module.exports = {
   
   name: "toan.",
   code: `$setGlobalUserVar[diamond;$sum[$getGlobalUserVar[diamond];$random[0;5]]]
-  $setGlobalUserVar[health;$sub[$getGlobalUserVar[health];$random[0;4]]]
-$setGlobalUserVar[hungry;$sub[$getGlobalUserVar[hungry];$random[0;4]]]
-$setGlobalUserVar[thirsty;$sub[$getGlobalUserVar[thirsty];$random[0;5]]]
+$setGlobalUserVar[health;$sub[$getGlobalUserVar[health];$random[0;5]]]
+
 $title[**$username** Học toán:]
 $color[$random[10000;999999]]
 $description[Bạn giải được bài toán và được cô giáo cho $random[0;5] hộp quà!, \`$getServerVar[prefix]hopqua\` để đổi lấy 5 điểm GPA.]
