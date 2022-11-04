@@ -1,6 +1,6 @@
 module.exports = {
   
-  name: "toan.",
+  name: "toan",
   code: `$setGlobalUserVar[diamond;$sum[$getGlobalUserVar[diamond];$random[0;5]]]
 $setGlobalUserVar[health;$sub[$getGlobalUserVar[health];$random[0;5]]]
 
@@ -10,4 +10,5 @@ $description[Bạn giải được bài toán và được cô giáo cho $random
 $globalCooldown[2s;**⏰ Chờ %time% cô giáo đi livetream Tiktok và sẽ quay trở lại ngay.!**]
 
 $onlyIf[$getGlobalUserVar[health]>=30; Trí thông minh của bạn ở mức 30% và không thể học tiếp! Dùng điểm GPA để đổi lấy thuốc bổ não.]`
+$onlyIf[$getGlobalUserVar[toan]>=1; Bạn không có sách để học!] `
 }
