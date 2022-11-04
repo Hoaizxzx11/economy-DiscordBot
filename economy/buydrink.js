@@ -1,9 +1,9 @@
 module.exports = {
   
-  name: "buy-drink",
+  name: "nuoc",
   code: `
-$description[**@$username Success in buying a Drink🥛 !!**]
-$setGlobalUserVar[cash;$sub[$getGlobalUserVar[cash];45]]
+$description[**@$username Đã đổi được chai Sting Đỏ🥛 !!**]
+$setGlobalUserVar[cash;$sub[$getGlobalUserVar[cash];10]]
 $setGlobalUserVar[drink;$sum[$getGlobalUserVar[drink];1]]
-$onlyIf[$getGlobalUserVar[cash]>=45;Not enough cash!]`
+$onlyIf[$getGlobalUserVar[cash]>=10;Bạn không đủ điểm để đổi!]`
 }
