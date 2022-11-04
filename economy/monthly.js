@@ -1,14 +1,17 @@
 module.exports = {
-  
-  name: "monthly",
-  code: `
-$title[Monthly Salary.]
-$thumbnail[$userAvatar[$authorID]]
-$description[You have received **$getServerVar[monthly]** of your daily allowance! The money is already in cash!]
-$color[RANDOM]
-$footer[SOURCE CODE FROM Jastin Ch in Youtube || https://youtube.com/c/JastinCh || Full Made By JastinCh!]
-$addTimestamp
 
-$setGlobalUserVar[cash;$sum[$getGlobalUserVar[cash];$getServerVar[monthly]]]
-$globalCooldown[30d;**⏰ Wait for %time% to claim monthly salary again!**]`
+  
+
+  name: "sach-toan",
+
+  code: `
+
+$description[**@$username Đã đổi được quyển sách Toán !!**]
+
+$setGlobalUserVar[diem;$sub[$getGlobalUserVar[diem];5]]
+
+$setGlobalUserVar[sach-toan;$sum[$getGlobalUserVar[sach-toan];1]]
+
+$onlyIf[$getGlobalUserVar[diem]>=5;Bạn không đủ điểm GPA để đổi lấy sách!]`
+
 }
