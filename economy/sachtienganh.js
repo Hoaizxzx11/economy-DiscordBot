@@ -1,6 +1,6 @@
 module.exports = {
   
-  name: "sach-tienganh",
+  name: "sachtienganh",
   code: `
 $description[**@$username Đã đổi được quyển sách Tiếng Anh !!**]
 $setGlobalUserVar[cash;$sub[$getGlobalUserVar[cash];5]]
