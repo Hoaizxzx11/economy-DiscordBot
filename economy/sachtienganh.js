@@ -3,7 +3,7 @@ module.exports = {
   name: "sachtienganh",
   code: `
 $description[**@$username Đã đổi được quyển sách Tiếng Anh !!**]
-$setGlobalUserVar[cash;$sub[$getGlobalUserVar[cash];5]]
-$setGlobalUserVar[fishrod;$sum[$getGlobalUserVar[fishrod];1]]
-$onlyIf[$getGlobalUserVar[cash]>=75;Bạn không đủ điểm GPA để đổi lấy sách!]`
+$setGlobalUserVar[diem;$sub[$getGlobalUserVar[diem];10]]
+$setGlobalUserVar[sachtienganh;$sum[$getGlobalUserVar[sachtienganh];1]]
+$onlyIf[$getGlobalUserVar[diem]>=10;Bạn không đủ điểm để đổi lấy sách!]`
 }
