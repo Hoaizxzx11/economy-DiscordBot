@@ -4,8 +4,8 @@ module.exports = {
   aliases: ['d', 'diem'],
   code: `$title[Điểm của $username]
 $thumbnail[$userAvatar[$authorID]]
-$description[ **| Điểm**
-$$getGlobalUserVar[cash]
+$description[ **Điểm**
+$getGlobalUserVar[diem]
 
 
 
