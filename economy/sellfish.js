@@ -1,12 +1,12 @@
 module.exports = {
   
-  name: "sellfish",
+  name: "hopqua",
   code: `
-$setGlobalUserVar[cash;$sum[$getGlobalUserVar[cash];250]]
-$setGlobalUserVar[fish;$sub[$getGlobalUserVar[fish];5]]
-$title[__**SELLING FISH🐟**__]
+$setGlobalUserVar[cash;$sum[$getGlobalUserVar[cash];5]]
+$setGlobalUserVar[fish;$sub[$getGlobalUserVar[fish];1]]
+$title[__**Mở Quà**__]
 $color[00ff59]
 $description[
-**@$username Successfully selling 5 KG Fish for $250.**]
-$onlyIf[$getGlobalUserVar[fish]>=5;You don't have that many fish!.]`
+**@$username Đã mở 1 hộp quà và nhận được 5 điểm.**]
+$onlyIf[$getGlobalUserVar[fish]>=1;Bạn không có hộp quà để mở!.]`
 }
